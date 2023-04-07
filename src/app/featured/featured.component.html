@@ -1,0 +1,13 @@
+<div class="featured-section bg-land1 py-16 justify-center">
+  <div class="text-5xl text-center py-4">Featured</div>
+  <div class="flex flex-wrap justify-center py-16">
+    <div class="w-1/5 pb-1/2 bg-{{item.image}} rounded-lg shadow-lg bg-cover bg-center relative mx-1" *ngFor="let item of featuredList">
+      <div class="absolute bottom-0 left-0 right-0 top-0  bg-gradient opacity-70 rounded-lg shadow-lg">
+      </div>
+      <div class="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-5 ">
+        <div class="mt-2 text-white text-lg font-bold ">{{item.title}}</div>
+        <div class="mt-2 text-xs text-white ">{{item.subtitle}}</div>
+      </div>
+    </div>
+  </div>
+</div>

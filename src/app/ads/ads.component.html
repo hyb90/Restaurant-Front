@@ -1,0 +1,14 @@
+<div class="ads-section justify-center">
+    <div class="text-5xl text-center m-16">Discover what’s new</div>
+  <!-- component -->
+  <div >
+    <owl-carousel-o class="flex flex-wrap justify-end" [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of adCollection"><div class="py-4 px-1" >
+          <div class="object-cover relative rounded-lg ad-card">
+            <img [src]="item" class="object-cover">
+          </div>
+      </div></ng-template>
+    </owl-carousel-o>
+  </div>
+
+</div>
